@@ -24,6 +24,12 @@ bundle install
 ```
 ruby test/hand_test.rb
 ```
+または
+```
+bundle exec rspec
+レポートを出力するなら
+bundle exec rspec --format html --out report.html
+```
 
 ## License
 

@@ -57,4 +57,22 @@ class HandTest < Minitest::Test
     hand = Hand.new(['10♥', 'J♥', 'Q♥', 'K♥', 'A♥'])
     assert_equal 'royal-straight-flush', hand.rank
   end
+
+  def test_invalid_face
+    # エラーが発生することを検証
+    e = assert_raises ArgumentError do
+      Hand.new(['0♥', 'J♥', 'Q♥', 'K♥', 'A♥'])
+    end
+    # エラーメッセージを検証
+    assert_equal 'invalid card: 0♥', e.message
+  end
+
+  def test_invalid_suit
+    # エラーが発生することを検証
+    e = assert_raises ArgumentError do
+      Hand.new(['1¥', 'J♥', 'Q♥', 'K♥', 'A♥'])
+    end
+    # エラーメッセージを検証
+    assert_equal 'invalid card: 1¥', e.message
+  end
 end

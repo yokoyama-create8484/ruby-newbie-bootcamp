@@ -9,3 +9,6 @@ gem 'pry-byebug'
 # minitest
 gem 'minitest'
 gem 'minitest-reporters'
+
+# rspec
+gem 'rspec'
