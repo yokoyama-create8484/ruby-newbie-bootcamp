@@ -1,0 +1,15 @@
+Style/AsciiComments:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Exclude auto-gen files
+AllCops:
+  Exclude:
+    - '.history/**/*'
+    - '.vscode/*'
+    - '.*'
+
+CyclomaticComplexity:
+  Max: 12
