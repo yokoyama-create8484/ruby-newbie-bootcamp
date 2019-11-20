@@ -13,14 +13,16 @@ Exercises for Ruby Newbie's Workshop.
 
 ## Installation
 
-```git clone https://github.com/enokizako/ruby-newbie-bootcamp.git
+```
+git clone https://github.com/enokizako/ruby-newbie-bootcamp.git
 cd ruby-newbie-bootcamp
 bundle install
 ```
 
 ## Usage
 
-```ruby test/hand_test.rb
+```
+ruby test/hand_test.rb
 ```
 
 ## License
